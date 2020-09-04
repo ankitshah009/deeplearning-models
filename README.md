@@ -78,6 +78,8 @@ A collection of various deep learning architectures, models, and tips for Tensor
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-vgg16.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-vgg16.ipynb)]
 - VGG-16 Gender Classifier Trained on CelebA   
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb)]
+- VGG-16 Dogs vs Cats Classifier  
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-vgg16-cats-dogs.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-vgg16-cats-dogs.ipynb)]
 - Convolutional Neural Network VGG-19   
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-vgg19.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-vgg19.ipynb)]
 
@@ -195,6 +197,10 @@ A collection of various deep learning architectures, models, and tips for Tensor
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gan/gan-conv-smoothing.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gan/gan-conv-smoothing.ipynb)]
 - Convolutional Wasserstein GAN on MNIST  
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gan/dc-wgan-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gan/dc-wgan-1.ipynb)]
+- "Deep Convolutional GAN" (DCGAN) on Cats and Dogs Images  
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gan/dcgan-cats-and-dogs.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gan/dcgan-cats-and-dogs.ipynb)]
+- "Deep Convolutional GAN" (DCGAN) on CelebA Face Images  
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gan/dcgan-celeba.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gan/dcgan-celeba.ipynb)]
 
 ## Graph Neural Networks (GNNs)
 
@@ -223,13 +229,9 @@ A collection of various deep learning architectures, models, and tips for Tensor
 - RNN with GRU cells (IMDB)   
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
 - Multilayer bi-directional RNN (IMDB)   
-&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_lstm_bi_imdb.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_lstm_bi_imdb.ipynb)]
 - Bidirectional Multi-layer RNN with LSTM with Own Dataset in CSV Format (AG News)     
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_agnews.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_agnews.ipynb)]
-- Bidirectional Multi-layer RNN with LSTM with Own Dataset in CSV Format (Yelp Review Polarity)     
-&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_yelp-polarity.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_yelp-polarity.ipynb)]
-- Bidirectional Multi-layer RNN with LSTM with Own Dataset in CSV Format (Amazon Review Polarity)   
-&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_amazon-polarity.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_amazon-polarity.ipynb)]
 
 
 #### Many-to-Many / Sequence-to-Sequence
@@ -249,6 +251,9 @@ A collection of various deep learning architectures, models, and tips for Tensor
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/ordinal/ordinal-cnn-beckham2016-afadlite.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/ordinal/ordinal-cnn-beckham2016-afadlite.ipynb)]
 
 
+
+
+
 ## Tips and Tricks
 
 - Cyclical Learning Rate   
@@ -261,9 +266,17 @@ A collection of various deep learning architectures, models, and tips for Tensor
 
 ## Transfer Learning
 
-- Transfer Learning Example (VGG16 pre-trained on ImageNet for Cifar-10)
-
+- Transfer Learning Example (VGG16 pre-trained on ImageNet for Cifar-10)  
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/transfer/transferlearning-vgg16-cifar10-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/transfer/transferlearning-vgg16-cifar10-1.ipynb)]
+
+## Visualization and Interpretation
+
+- Vanilla Loss Gradient (wrt Inputs) Visualization (Based on a VGG16 Convolutional Neural Network for Kaggle's Cats and Dogs Images)  
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/viz/cnns/cats-and-dogs/cnn-viz-grad__vgg16-cats-dogs.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/viz/cnns/cats-and-dogs/cnn-viz-grad__vgg16-cats-dogs.ipynb)]
+- Guided Backpropagation (Based on a VGG16 Convolutional Neural Network for Kaggle's Cats and Dogs Images)  
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/viz/cnns/cats-and-dogs/cnn-viz-guided-backprop__vgg16-cats-dogs.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/viz/cnns/cats-and-dogs/cnn-viz-guided-backprop__vgg16-cats-dogs.ipynb)]
+
+
 
 ## PyTorch Workflows and Mechanics
 
@@ -283,11 +296,13 @@ A collection of various deep learning architectures, models, and tips for Tensor
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-data-loader-afad.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-data-loader-afad.ipynb)]
 - Using PyTorch Dataset Loading Utilities for Custom Datasets -- Dating Historical Color Images   
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-data-loader_dating-historical-color-images.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-data-loader_dating-historical-color-images.ipynb)]
+- Using PyTorch Dataset Loading Utilities for Custom Datasets -- Fashion MNIST   
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
 
 #### Training and Preprocessing
 
 - Generating Validation Set Splits   
-[PyTorch]: [GitHub](pytorch_ipynb/mechanics/validation-splits.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/validation-splits.ipynb)]
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/mechanics/validation-splits.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/validation-splits.ipynb)]
 - Dataloading with Pinned Memory   
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb)]
 - Standardizing Images   
